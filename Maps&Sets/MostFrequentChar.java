@@ -26,3 +26,32 @@ public class MostFrequentChar {
         return ans;
     }
 }
+//2nd method is easy 
+// import java.util.HashMap;
+
+// public class MostFrequentChar {
+
+//     public static char getMaxOccuringChar(String s) {
+
+//         HashMap<Character, Integer> map = new HashMap<>();
+
+//         char ans = s.charAt(0);
+//         int maxFreq = 0;
+
+//         for(int i = 0; i < s.length(); i++) {
+
+//             char ch = s.charAt(i);
+
+//             int freq = map.getOrDefault(ch, 0) + 1;
+
+//             map.put(ch, freq);
+
+//             if(freq > maxFreq || (freq == maxFreq && ch < ans)) {
+//                 maxFreq = freq;
+//                 ans = ch;
+//             }
+//         }
+
+//         return ans;
+//     }
+// }
